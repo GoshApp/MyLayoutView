@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -39,33 +42,137 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:orientation="vertical"
-            android:background="#949494"/>
+            android:background="#949494">
+    </LinearLayout>
     <LinearLayout
             android:orientation="vertical"
+            android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:orientation="horizontal"
                 android:background="#fff">
-
-
             <TextView
-                    android:id="@+id/tv_checkbox1"
-                    android:text="Русский"
+                    android:text="from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="#000"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_rec_duration_from"/>
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/tv_rec_rang_seek"
+                    android:layout_height="wrap_content"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center"
+                    app:corner_radius="6"
+                    app:bar_color="#B0B4CE"
+                    app:bar_highlight_color="#2434AD"
+                    app:left_thumb_color="#D5D5D5"
+                    app:right_thumb_color="#D5D5D5"
+                    app:left_thumb_color_pressed="#B3B1B1"
+                    app:right_thumb_color_pressed="#B3B1B1"
+                    app:min_value="0"
+                    app:max_value="60"
+                    android:layout_weight="2"
+                    android:gravity="center"/>
+            <TextView
+                    android:id="@+id/tv_rec_duration_to"
+                    android:text="to"
+                    android:gravity="center|right"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="#DBD8D8">
+
+        <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#868383"
+                android:text="Автор"
+                android:textAllCaps="true"
+                android:gravity="left|bottom"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"/>
+        <TextView
+                android:id="@+id/tv_throw_off_author"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:textColor="#DD0707"
+                android:text="Сбросить"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_marginBottom="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:orientation="vertical"
-                android:background="#949494"/>
+                android:orientation="horizontal"
+                android:background="#fff">
+            <TextView
+                    android:text="Мои записи"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:layout_weight="9"
+                    android:id="@+id/tv_rec_author"/>
+
+            <RadioButton
+                    android:id="@+id/rb_author"
+                    android:gravity="center|right"
+                    android:padding="2dp"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="#DBD8D8">
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494"/>
 </LinearLayout>

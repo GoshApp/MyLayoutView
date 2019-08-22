@@ -12,22 +12,22 @@ class MyAct : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.my)
+        setContentView(R.layout.last_items)
 
         // get seekbar from view
-        val rangeSeekbar = findViewById<CrystalRangeSeekbar>(R.id.rangeSeekbar1)
+        val rangeSeekbar = findViewById<CrystalRangeSeekbar>(R.id.tv_rec_rang_seek)
 
-// get min and max text view
-        val tvMin = findViewById<TextView>(R.id.textView5)
-        val tvMax = findViewById<TextView>(R.id.textView4)
+        // get min and max text view
+        val tvMin = findViewById<TextView>(R.id.tv_rec_duration_from)
+        val tvMax = findViewById<TextView>(R.id.tv_rec_duration_to)
 
-// set listener
+        // set listener
         rangeSeekbar.setOnRangeSeekbarChangeListener { minValue, maxValue ->
-            tvMin.text = minValue.toString()
-            tvMax.text = maxValue.toString()
+            tvMax.text = formatting(maxValue)
+            tvMin.text = formatting(minValue)
         }
 
-// set final value listener
+     // set final value listener
         rangeSeekbar.setOnRangeSeekbarFinalValueListener { minValue, maxValue ->
             Log.d(
                 "CRS=>",
@@ -35,5 +35,19 @@ class MyAct : AppCompatActivity() {
             )
         }
 
+    }
+
+    private fun formatting(value: Number): String? {
+        val valueInt = value.toInt()
+        var stVal: String? = null
+
+        stVal = if(valueInt < 10){
+                "0:0" + valueInt
+            }else{ if (valueInt == 60) {
+                "01:00"
+            } else {
+                "0:" + valueInt }
+            }
+        return stVal
     }
 }

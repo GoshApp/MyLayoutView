@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
-            android:id="@+id/rangeSeekbar1"
+            android:id="@+id/tv_rec_rang_seek"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <TextView
@@ -15,5 +15,5 @@
     <TextView
             android:text="TextView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView4"/>
+            android:layout_height="wrap_content" android:id="@+id/tv_rec_duration_to"/>
 </LinearLayout>
