@@ -12,7 +12,7 @@ class MyAct : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.last_items)
+        setContentView(R.layout.view_obj)
 
         // get seekbar from view
         val rangeSeekbar = findViewById<CrystalRangeSeekbar>(R.id.tv_rec_rang_seek)
