@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:background="#DBD8D8">
+        <TextView
+                android:id="@+id/text_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#868383"
+                android:text="Перейти в настройки -> Общие -> Предпочитаемый язык и регион"
+                android:textSize="12sp"
+                android:gravity="left"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"/>
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:textColor="#868383"
+                android:text="Язык"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:gravity="left|bottom"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#020202">
+        <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="#868383"
+                android:src="@mipmap/ic_launcher"
+               android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10sp"/>
+        <TextView
+                android:id="@+id/tv_dropping"
+                android:layout_width="match_parent"
+                android:textColor="#EB0505"
+                android:text="Сбросить"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494">
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="#DBD8D8">
+
+        <TextView
+                android:id="@+id/tv_recording_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#868383"
+                android:text="Продолжительность записи"
+                android:textAllCaps="true"
+                android:gravity="left|bottom"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"/>
+        <TextView
+                android:id="@+id/tv_throw_off_recording_duration"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:textColor="#DD0707"
+                android:text="Сбросить"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_marginBottom="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#949494"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#fff">
+
+
+            <TextView
+                    android:id="@+id/tv_checkbox1"
+                    android:text="Русский"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:background="#949494"/>
+        </LinearLayout>
+</LinearLayout>
