@@ -12,7 +12,7 @@ class MyAct : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_obj)
+        setContentView(R.layout.my_thema)
 
         // get seekbar from view
         val rangeSeekbar = findViewById<CrystalRangeSeekbar>(R.id.tv_rec_rang_seek)
@@ -34,7 +34,6 @@ class MyAct : AppCompatActivity() {
                 "$minValue : $maxValue"
             )
         }
-
     }
 
     private fun formatting(value: Number): String? {

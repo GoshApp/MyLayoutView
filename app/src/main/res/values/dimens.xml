@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dem_heig_line">1dp</dimen>
+    <dimen name="dem_40_dp">40dp</dimen>
+    <dimen name="dem_50_dp">50dp</dimen>
+    <dimen name="dem_margin_end">15dp</dimen>
+    <dimen name="dem_10_sp">10sp</dimen>
+</resources>
